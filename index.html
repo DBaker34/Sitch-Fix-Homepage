@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/stitchfix.css">
+    </head>
+    <body>
+
+        <div id="container">
+
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="">Women</a></li>
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Kids</a></li>
+                        <li><img src="images/logo.png"></li>
+                        <li><a href="">Style Guide</a></li>
+                        <li><a href="">Social Impact</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><button>Sign In</button></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+
+                <section id="rightlogos" class="logos">
+                    <img src="images/logo1.png">
+                    <img src="images/logo2.png">
+                    <img src="images/logo3.png">
+                    <img src="images/logo4.png">
+                    <img src="images/logo5.png">
+                    <img src="images/logo6.png">
+                    <img src="images/logo7.png">
+                    <img src="images/logo8.png">
+                    <img src="images/logo9.png">
+                    <img src="images/logo10.png">
+                </section>
+
+                <section id="bottomlogos" class="logos">
+                    <img src="images/logo11.png">
+                    <img src="images/logo12.png">
+                    <img src="images/logo13.png">
+                    <img src="images/logo14.png">
+                    <img src="images/logo15.png">
+                    <img src="images/logo16.png">
+                    <img src="images/logo17.png">
+                </section>
+
+                <section id="quiz">
+                    <video controls autoplay playsinline muted loop>
+                        <source src="images/stitchvid.mp4" type="video/mp4">
+                    </video>
+
+                    <div id="vidtext">
+                        <h1>Discover a new shopping experience</h1>
+                        <button>Take your style quiz!</button>
+                    </div>
+                </section>
+
+                <section class="images" id="image1">
+                    <img id="pic1" src="images/desktop-mens-grey-outfit@1x.1dcET.jpg">
+                    <button class="rellax" data-rellax-speed="4">Men</button>
+                    <p class="rellax caption" data-rellax-speed="3"> Tell us about your one-of-a-kind style, fit & price range in your quiz. We’ll curate pieces for you and listen to your feedback—so you always look and feel your best. No subscription required. </p>
+                </section>
+
+                <section class="images" id="image2">
+                    <img id="pic1" src="images/desktop-womens-olive-top@1x.3zmU-.jpg">
+                    <button class="rellax" data-rellax-speed="4">Women</button>
+                    <p class="rellax caption" data-rellax-speed="3"> <span> Get clothing hand selected by our expert stylists</span> <br> Try on pieces at home, buy favorites and send back the rest. A $20 Fix styling fee covers your stylist’s expertise and time—it gets credited toward anything you keep. </p>
+                </section>
+
+                <section class="images" id="image3">
+                    <img id="pic1" src="images/desktop-kids-plaid-jacket@1x.sayiD.jpg">
+                    <button class="rellax" data-rellax-speed="4">Kids</button>
+                    <p class="rellax caption" data-rellax-speed="3"> <span> Instantly buy items curated just for your style </span> <br> `Skip hours of browsing and discover pieces curated just for you. After getting your first Fix, instantly buy what you want, when you want it. </p>
+                </section>
+
+                <section id="bottom">
+                    <button>Take your style quiz</button>
+                </section>
+
+            </main>
+
+            <footer>
+
+            </footer>
+        </div>
+
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script src="js/rellax.js"></script>
+        <script>const rellax = new Rellax('.rellax');</script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script>
+            ScrollReveal().reveal('#image1', {delay: 500});
+            ScrollReveal().reveal('#image2', {delay: 500});
+            ScrollReveal().reveal('#image3', {delay: 500});
+            ScrollReveal().reveal('video', {delay: 500});
+            ScrollReveal().reveal('#vidtext', {delay: 1500});
+        </script>
+    </body>
+</html>
