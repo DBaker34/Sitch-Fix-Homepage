@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/stitchfix.css">
+        <script src="https://kit.fontawesome.com/6f805aa0f7.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
@@ -22,11 +23,22 @@
                         <li><a href="">Women</a></li>
                         <li><a href="">Men</a></li>
                         <li><a href="">Kids</a></li>
-                        <li><img src="images/logo.png"></li>
-                        <li><a href="">Style Guide</a></li>
-                        <li><a href="">Social Impact</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><button>Sign In</button></li>
+                        <li><img id="logo" src="images/logo.png"></li>
+                        <li class="hide"><a href="">Style Guide</a></li>
+                        <li class="hide"><a href="">Social Impact</a></li>
+                        <li class="hide"><a href="">FAQ</a></li>
+                        <li class="hide"><button><a href="https://www.stitchfix.com/login">Sign In</a></button></li>
+                        <div class="dropdown">
+                            <li class="unhide"><img id="hamburger" src="images/hamburger.png"></li>
+                            <div id="dropdown-content" class="fullhide">
+                                <ul>
+                                    <li>Style Guide</li>
+                                    <li>Social Impact</li>
+                                    <li>FAQ</li>
+                                    <li>Sign In</li>
+                                </ul>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
             </header>
@@ -63,29 +75,30 @@
 
                     <div id="vidtext">
                         <h1>Discover a new shopping experience</h1>
-                        <button>Take your style quiz!</button>
+                        <button><a href="https://www.stitchfix.com/signup">Take your style quiz!</a></button>
                     </div>
                 </section>
 
                 <section class="images" id="image1">
                     <img id="pic1" src="images/desktop-mens-grey-outfit@1x.1dcET.jpg">
-                    <button class="rellax" data-rellax-speed="4">Men</button>
+                    <button class="rellax" data-rellax-speed="4"><a href="https://www.stitchfix.com/men">Men <i class="fas fa-arrow-right"></i></a></button>
                     <p class="rellax caption" data-rellax-speed="3"> Tell us about your one-of-a-kind style, fit & price range in your quiz. We’ll curate pieces for you and listen to your feedback—so you always look and feel your best. No subscription required. </p>
                 </section>
 
                 <section class="images" id="image2">
-                    <img id="pic1" src="images/desktop-womens-olive-top@1x.3zmU-.jpg">
-                    <button class="rellax" data-rellax-speed="4">Women</button>
+                    <img id="pic2" src="images/desktop-womens-olive-top@1x.3zmU-.jpg">
+                    <button class="rellax" data-rellax-speed="4"><a href="https://www.stitchfix.com/women">Women <i class="fas fa-arrow-right"></i></a></button>
                     <p class="rellax caption" data-rellax-speed="3"> <span> Get clothing hand selected by our expert stylists</span> <br> Try on pieces at home, buy favorites and send back the rest. A $20 Fix styling fee covers your stylist’s expertise and time—it gets credited toward anything you keep. </p>
                 </section>
 
                 <section class="images" id="image3">
-                    <img id="pic1" src="images/desktop-kids-plaid-jacket@1x.sayiD.jpg">
-                    <button class="rellax" data-rellax-speed="4">Kids</button>
+                    <img id="pic3" src="images/desktop-kids-plaid-jacket@1x.sayiD.jpg">
+                    <button class="rellax" data-rellax-speed="4"><a href="https://www.stitchfix.com/kids">Kids <i class="fas fa-arrow-right"></i></a></button>
                     <p class="rellax caption" data-rellax-speed="3"> <span> Instantly buy items curated just for your style </span> <br> `Skip hours of browsing and discover pieces curated just for you. After getting your first Fix, instantly buy what you want, when you want it. </p>
                 </section>
 
                 <section id="bottom">
+                    <h1> Ready to get started? </h1>
                     <button>Take your style quiz</button>
                 </section>
 
@@ -96,10 +109,7 @@
             </footer>
         </div>
 
-
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <script src="js/stitchfix.js"></script>
         <script src="js/rellax.js"></script>
         <script>const rellax = new Rellax('.rellax');</script>
         <script src="https://unpkg.com/scrollreveal@4"></script>
@@ -107,6 +117,7 @@
             ScrollReveal().reveal('#image1', {delay: 500});
             ScrollReveal().reveal('#image2', {delay: 500});
             ScrollReveal().reveal('#image3', {delay: 500});
+            ScrollReveal().reveal('#bottom', {delay: 500});
             ScrollReveal().reveal('video', {delay: 500});
             ScrollReveal().reveal('#vidtext', {delay: 1500});
         </script>
